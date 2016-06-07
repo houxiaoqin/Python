@@ -23,9 +23,10 @@ for line in ori_words:
     if line  == "":
         continue;   
     
-    keylistName = ""
-    keylistCode = line.split(' ')
+    keylistName = " "
+    keylistCode = line.split()
     for key in keylistCode:
+        
         keylistName = keylistName + dic[key] + ' '
     #print line+' '+keylistName
     r = line+' '+keylistName+'\n'

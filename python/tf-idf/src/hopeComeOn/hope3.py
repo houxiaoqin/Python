@@ -45,7 +45,7 @@ for item in listfile:
     count +=1
     if item[-4:] == '.txt':
         readFile=open(info+"/data/"+item)
-        resultFile = open(info+"/output/"+item,'w')  
+        resultFile = open(info+"/conf1/"+item,'w')  
         ori_words = readFile.readlines( )
         #print ori_words        
         print '**************'
@@ -62,14 +62,13 @@ for item in listfile:
                 continue
             #print line
             resultFile.write(line+'\n') 
-
 #===
    
 
 #resultFile.close()
 print' '
 print 'Well Done'
-print u"结果保存路径为 ："+info+"/output/"
+print u"结果保存路径为 ："+info+"/conf1/"
         
         
 
