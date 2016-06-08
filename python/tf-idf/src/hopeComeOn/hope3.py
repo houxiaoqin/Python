@@ -24,6 +24,13 @@ def is_chinese(uchar):
         return True           
     else:
         return False
+def is_number(uchar):
+#判断一个unicode是否是汉字"""
+    if uchar >= u'\u0030' and uchar<=u'\u0039':
+        return True           
+    else:
+        return False
+
 #===============================================================================
 # 示例：
 # if is_chinese(u'语言'):
@@ -59,6 +66,8 @@ for item in listfile:
 #===
             line_unicode = unicode(line, "utf-8")
             if is_chinese(line_unicode):
+                continue
+            if is_number(line_unicode):
                 continue
             #print line
             resultFile.write(line+'\n') 

@@ -34,8 +34,8 @@ for line in confList:
     workfuncStr = workfuncStr+line+" "
 workfuncList = workfuncStr.strip().split()
 topicList = confdic.keys() 
-print topicList
-print workfuncList
+#print topicList
+#print workfuncList
 #print confdic.values()
  
 listfile=os.listdir(info+"/conf1")

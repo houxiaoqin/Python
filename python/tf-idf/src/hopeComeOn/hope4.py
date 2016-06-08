@@ -27,13 +27,13 @@ for item in listfile:
         ori_words = readFile.readlines( )
         #print ori_words        
         print '**************'
-        print '== file'+str(count)+' begins:'
+        print '== file'+str(count)+" " +item +' begins:'
         
         for line in ori_words:        
             line = line.replace('\n','').replace('\r','').replace('\t',' ').replace('\t','\t\t').replace("\xef\xbb\xbf","").strip()
             if line  == "":
                 continue;  
-            print line.split()
+            #print line.split()
             dic[line.split()[0]] = line.split()[1]
         readFile.close()
 
